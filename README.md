@@ -10,3 +10,6 @@ Please follow the following command to run this app in your local machine:
 
 1. Test the App
   `yarn test` or `npm run test`
+
+1. Test with coverage report
+  `yarn test --coverage` or `npm run test`
