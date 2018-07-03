@@ -1,7 +1,6 @@
 import express from "express";
 import graphqlServer from "express-graphql";
 import { buildSchema } from "graphql";
-import cors from "cors";
 import path from "path";
 
 import data from "./data";
