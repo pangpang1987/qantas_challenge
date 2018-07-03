@@ -1,7 +1,9 @@
 import express from "express";
 import graphqlServer from "express-graphql";
 import { buildSchema } from "graphql";
-import cors from 'cors';
+import cors from "cors";
+import path from "path";
+
 import data from "./data";
 
 const schema = buildSchema(`
@@ -20,10 +22,10 @@ const schema = buildSchema(`
   }
 `);
 
-const PORT = 4000;
+const PORT = 3000;
 const app = express();
-app.use(cors());
 
+app.use(express.static(path.resolve(__dirname, "../../build"), { index: false }));
 app.use(
   "/graphql",
   graphqlServer({
@@ -31,4 +33,11 @@ app.use(
     rootValue: data
   })
 );
-app.listen(PORT);
+
+app.get("*", (request, response) => {
+  response.sendFile(path.resolve(__dirname, "../../build", "index.html"));
+});
+
+app.listen(PORT, () => {
+  console.log(`App listening on port ${PORT}!`); // eslint-disable-line
+});

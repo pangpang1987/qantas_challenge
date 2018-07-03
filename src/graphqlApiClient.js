@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // GraphQL service endpoint
-const ENDPOINT = 'http://localhost:4000/graphql';
+const ENDPOINT = '/graphql';
 
 const client = () => ({
   get: (options) => axios.get(ENDPOINT, options),

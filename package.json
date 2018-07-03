@@ -22,7 +22,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "build-server": "rimraf dist/ && babel ./server --out-dir dist/server --ignore ./node_modules",
-    "serve": "npm run build-server && node dist/server/index.js",
+    "bundle-build": "npm run build && npm run build-server",
+    "serve": "npm run bundle-build && node dist/server/index.js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },

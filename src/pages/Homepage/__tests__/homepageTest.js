@@ -52,7 +52,7 @@ describe("Actions homepage", () => {
   });
 
   it("should create a series of actions when fetch data succeed", () => {
-    moxios.stubRequest("http://localhost:4000/graphql", {
+    moxios.stubRequest("/graphql", {
       status: 200,
       response: {
         data: {
