@@ -1,11 +1,3 @@
-import React from 'react';
-
-const Homepage = () => {
-  return (<div>Homepage</div>);
-}
-
-Homepage.propTypes = {
-
-};
+import Homepage from './HomepageContainer';
 
 export default Homepage;
