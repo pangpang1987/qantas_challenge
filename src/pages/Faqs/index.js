@@ -1,11 +1,3 @@
-import React from 'react';
+import FaqsContainer from './FaqsContainer';
 
-const Faqs = () => {
-  return (<div>Faqs</div>);
-}
-
-Faqs.propTypes = {
-
-};
-
-export default Faqs;
+export default FaqsContainer;
