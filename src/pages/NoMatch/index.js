@@ -1,11 +1,3 @@
-import React from 'react';
-
-const NoMatch = () => {
-  return (<div>NoMatch</div>);
-}
-
-NoMatch.propTypes = {
-
-};
+import NoMatch from './NoMatch';
 
 export default NoMatch;
