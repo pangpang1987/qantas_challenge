@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component PanelLink should render active state 1`] = `
+<styled.li
+  className="isActive"
+  onClick={[Function]}
+>
+  test
+</styled.li>
+`;
+
+exports[`Component PanelLink should render active state 2`] = `
+<styled.li
+  className=""
+  onClick={[Function]}
+>
+  test
+</styled.li>
+`;
+
+exports[`Component PanelLink should render normal state 1`] = `
+<styled.li
+  className=""
+  onClick={[Function]}
+>
+  test
+</styled.li>
+`;

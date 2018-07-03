@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`media helper function should output a styled css when given proper params 1`] = `
+Array [
+  "
+    @media (max-width: ",
+  "575",
+  "px) {
+      ",
+  "width: 100%;",
+  ";
+    }
+  ",
+]
+`;

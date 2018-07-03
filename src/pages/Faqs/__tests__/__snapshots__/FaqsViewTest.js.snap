@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component <FaqsView /> should render a loader when fetching data 1`] = `
+<div>
+  Loading...
+</div>
+`;
+
+exports[`Component <FaqsView /> should render initial state properly 1`] = `
+<styled.div>
+  <styled.section>
+    <styled.h3 />
+    <styled.div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": undefined,
+        }
+      }
+    />
+  </styled.section>
+  <styled.ul />
+</styled.div>
+`;
+
+exports[`Component <FaqsView /> should render properly when switch to another title 1`] = `
+<styled.div>
+  <styled.section>
+    <styled.h3>
+      element test
+    </styled.h3>
+    <styled.div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<p>first</p><p>second</p>",
+        }
+      }
+    />
+  </styled.section>
+  <styled.ul>
+    <PanelLink
+      activeIndex={1}
+      index={0}
+      key="0"
+      setActiveIndex={[Function]}
+      title="test title here"
+    />
+    <PanelLink
+      activeIndex={1}
+      index={1}
+      key="1"
+      setActiveIndex={[Function]}
+      title="element test"
+    />
+  </styled.ul>
+</styled.div>
+`;
+
+exports[`Component <FaqsView /> should render properly with data 1`] = `
+<styled.div>
+  <styled.section>
+    <styled.h3>
+      test title here
+    </styled.h3>
+    <styled.div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "testBody",
+        }
+      }
+    />
+  </styled.section>
+  <styled.ul>
+    <PanelLink
+      activeIndex={0}
+      index={0}
+      key="0"
+      setActiveIndex={[Function]}
+      title="test title here"
+    />
+    <PanelLink
+      activeIndex={0}
+      index={1}
+      key="1"
+      setActiveIndex={[Function]}
+      title="element test"
+    />
+  </styled.ul>
+</styled.div>
+`;

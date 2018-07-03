@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders initial state correctly 1`] = `
+<React.Fragment>
+  <styled.div>
+    <Styled(NavLink)
+      activeClassName="isActive"
+      exact={true}
+      to="/"
+    >
+      Home
+    </Styled(NavLink)>
+    <Styled(NavLink)
+      activeClassName="isActive"
+      exact={true}
+      to="/faqs"
+    >
+      Faqs
+    </Styled(NavLink)>
+  </styled.div>
+  <styled.div>
+    test
+  </styled.div>
+</React.Fragment>
+`;

@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component HomepageView should render a loader when fetching data 1`] = `
+<div>
+  Loading...
+</div>
+`;
+
+exports[`Component HomepageView should render initial state properly 1`] = `
+<styled.div>
+  <styled.div>
+    <styled.h1 />
+    <styled.p />
+    <Styled(Link)
+      to="/faqs"
+    >
+      Learn more
+    </Styled(Link)>
+  </styled.div>
+</styled.div>
+`;
+
+exports[`Component HomepageView should render properly with data 1`] = `
+<styled.div
+  image="https://developers.google.com/identity/images/incorrect-buttons/lightbutton.png"
+>
+  <styled.div>
+    <styled.h1>
+      Heading
+    </styled.h1>
+    <styled.p>
+      Sub heading
+    </styled.p>
+    <Styled(Link)
+      to="/faqs"
+    >
+      Learn more
+    </Styled(Link)>
+  </styled.div>
+</styled.div>
+`;
